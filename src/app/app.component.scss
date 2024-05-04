@@ -1,0 +1,69 @@
+.wrapper {
+  background-color: #14131a;
+  height: 100%;
+  padding-bottom: 10px;
+}
+
+.sideMenu {
+  max-width: 300px;
+  position: fixed;
+  z-index: 1;
+  transition: all 0.5s;
+
+
+}
+
+.mobileView {
+  display: none;
+}
+
+@media(max-width:1200px) {
+  .web {
+    display: none;
+  }
+
+  .mobileView {
+    display: block;
+  }
+}
+
+::-webkit-scrollbar {
+  width: 0px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  // box-shadow: inset 0 0 5px grey; 
+  border-radius: 10px;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: transparent;
+  border-radius: 10px;
+  width: 0;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: transparent;
+  width: 0;
+}
+
+.dashboardDiv {
+  height: 100vh;
+  overflow: scroll;
+  overflow-x: hidden;
+
+  @media(min-width:1200px) {
+    margin-left: 280px;
+  }
+}
+
+.isHide {
+  margin-left: -300px;
+}
+
+.isSHow {
+  margin-left: 0px;
+}

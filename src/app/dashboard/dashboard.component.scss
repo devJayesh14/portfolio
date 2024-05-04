@@ -1,0 +1,93 @@
+.main-header {
+    padding: 8px 0;
+}
+
+.customBtn {
+    background-color: green;
+    border-radius: 8px;
+    color: white;
+}
+
+.transition-colors {
+    transition-property: color, background-color, border-color, text-decoration-color, fill, stroke;
+    transition-timing-function: cubic-bezier(.4, 0, .2, 1);
+    transition-duration: .15s;
+}
+
+.main-banner {
+    height: 200px;
+    background: rgb(28, 27, 35);
+    background: linear-gradient(90deg, rgba(28, 27, 35, 1) 0%, rgba(20, 19, 26, 1) 100%, rgba(20,20,20) 100%);
+    border-radius: 8px;
+    position: relative;
+
+    .profile {
+        position: absolute;
+        top: 24%;
+        left: 20px;
+
+        .circle {
+            height: 100px;
+            width: 100px;
+            background-color: white;
+            border-radius: 50%;
+        }
+
+        .name {
+            color: white;
+            margin-left: 25px !important;
+        }
+    }
+}
+
+.ProejctHeading {
+    color: white;
+}
+
+.ProjectItem {
+    .card {
+        // height: 280px;
+        height: 100%;
+        border: 0;
+        border-radius: 20px;
+        background-color: #fff;
+
+        .card-img {
+            // height: 60%;
+            background-color: #1c1b23;
+
+            // border-radius: 0;
+            img {
+                border-top-left-radius: 15px;
+                border-top-right-radius: 15px;
+                height: 200px;
+            }
+        }
+    }
+}
+
+.Skill {
+    .card {
+        background-color: #1c1b23;
+        color: #8a8990;
+        font-weight: 600;
+
+        p {
+            font-size: 18px;
+        }
+
+        .SkillBtn {
+            background: #14131a;
+            color: #64636a;
+        }
+    }
+}
+
+.sideMenuButton {
+    display: none;
+
+    @media (max-width:1200px) {
+        display: block;
+        cursor: pointer;
+    }
+}

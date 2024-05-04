@@ -1,0 +1,13 @@
+<div class="container-fluid wrapper p-0">
+    <div class="row m-0">
+        <div class="col sideMenu web p-0">
+            <app-sidebar></app-sidebar>
+        </div>
+        <div class="col sideMenu  mobileView p-0" [ngClass]="sharedService.isSideMenu?'isSlide':'isHide'">
+            <app-sidebar></app-sidebar>
+        </div>
+        <div class="col dashboardDiv">
+            <app-dashboard></app-dashboard>
+        </div>
+    </div>
+</div>
